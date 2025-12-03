@@ -1,13 +1,8 @@
 {
-  "headers": [
+  "rewrites": [
     {
       "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/xml"
-        }
-      ]
+      "destination": "/api/sitemap.xml.js"
     }
   ]
 }
