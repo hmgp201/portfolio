@@ -21,10 +21,6 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff|woff2|ttf|eot|xml|txt))",
-      "destination": "/$1"
-    },
-    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
