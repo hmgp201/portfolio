@@ -1,6 +1,8 @@
-export default function handler(req, res) {
+module.exports = (req, res) => {
   res.setHeader('Content-Type', 'application/xml; charset=utf-8');
-  res.status(200).send(`<?xml version="1.0" encoding="UTF-8"?>
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -14,6 +16,8 @@ export default function handler(req, res) {
     <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio-alpha-six-nilfcrr6zt.vercel.app/" />
   </url>
   
-</urlset>`);
-}
+</urlset>`;
+  
+  res.status(200).send(xml);
+};
 
