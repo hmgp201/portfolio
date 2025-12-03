@@ -21,7 +21,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!sitemap\\.xml|robots\\.txt|favicon\\.ico|manifest\\.json|.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff|woff2|ttf|eot|xml|txt)|static/).*)",
+      "source": "/((?!.*\\.(xml|txt|ico|json|js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)|static/).*)",
       "destination": "/index.html"
     }
   ]
