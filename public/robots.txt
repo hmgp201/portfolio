@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://portfolio-alpha-six-nilfcrr6zt.vercel.app/sitemap.xml
+Sitemap: https://harrysautomations.xyz/sitemap.xml
