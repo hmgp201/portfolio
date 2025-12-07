@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [language, setLanguage] = useState('en');
   
-  const profileImage = "https://i.imgur.com/93wvjeF.jpeg";
+  const profileImage = "./public/images/profile.jpg";
 
   const translations = {
     en: {
@@ -401,6 +401,16 @@ export default function Portfolio() {
       document.head.appendChild(metaDescription);
     }
     metaDescription.content = metadata.description;
+
+    // Update canonical URL
+    const canonicalUrl = `https://harrysautomations.xyz/${currentPage === 'home' ? '' : currentPage}`;
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = canonicalUrl;
 
     const ogTags = {
       'og:title': metadata.title,
