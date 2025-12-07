@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [language, setLanguage] = useState('en');
   
-  const profileImage = "./public/images/profile.jpeg";
+  const profileImage = process.env.PUBLIC_URL + "/images/profile.jpeg";
 
   const translations = {
     en: {
