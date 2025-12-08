@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "portfolio-alpha-six-nilfcrr6zt.vercel.app"
+        }
+      ],
+      "destination": "https://harrysautomations.xyz/:path*",
+      "permanent": true
+    }
+  ],
   "routes": [
     {
       "src": "/sitemap.xml",
@@ -16,6 +29,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "all"
         }
       ]
     }
