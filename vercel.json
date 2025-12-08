@@ -23,12 +23,6 @@
       "permanent": true
     }
   ],
-  "routes": [
-    {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
-    }
-  ],
   "headers": [
     {
       "source": "/sitemap.xml",
@@ -36,23 +30,6 @@
         {
           "key": "Content-Type",
           "value": "application/xml"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "all"
-        },
-        {
-          "key": "Link",
-          "value": "<https://harrysautomations.xyz/>; rel=\"canonical\""
         }
       ]
     }
