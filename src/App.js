@@ -403,7 +403,7 @@ export default function Portfolio() {
     metaDescription.content = metadata.description;
 
     // Update canonical URL
-    const canonicalUrl = `https://harrysautomations.xyz/${currentPage === 'home' ? '' : currentPage}`;
+    const canonicalUrl = `https://www.harrysautomations.xyz/${currentPage === 'home' ? '' : currentPage}`;
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');

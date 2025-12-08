@@ -1,28 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "portfolio-alpha-six-nilfcrr6zt.vercel.app"
-        }
-      ],
-      "destination": "https://harrysautomations.xyz/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "portfolio-harry-pethels-projects.vercel.app"
-        }
-      ],
-      "destination": "https://harrysautomations.xyz/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/sitemap.xml",

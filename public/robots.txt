@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://harrysautomations.xyz/sitemap.xml
+Sitemap: https://www.harrysautomations.xyz/sitemap.xml
