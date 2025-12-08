@@ -985,9 +985,15 @@ export default function Portfolio() {
           "name": "Harry Pethel",
           "jobTitle": "Automation Solutions Expert",
           "description": "Workflow automation, system integration, and technical documentation specialist",
-          "url": "https://harrysautomations.com",
+          "url": "https://www.harrysautomations.xyz",
           "email": "harrypethel@outlook.fr",
           "telephone": "+12407969774",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Remote",
+            "addressRegion": "Worldwide",
+            "addressCountry": "US"
+          },
           "knowsAbout": [
             "Workflow Automation",
             "API Integration",
@@ -1015,6 +1021,10 @@ export default function Portfolio() {
               "JavaScript",
               "Technical Writing"
             ]
+          },
+          "workLocation": {
+            "@type": "VirtualLocation",
+            "url": "https://www.harrysautomations.xyz"
           }
         })}
       </script>
