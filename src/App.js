@@ -504,7 +504,6 @@ export default function Portfolio() {
     document.head.appendChild(fontAwesome);
   }, []);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const metadata = pageMetadata[currentPage];
     document.title = metadata.title;
@@ -559,7 +558,7 @@ export default function Portfolio() {
       }
       tag.content = content;
     });
-  }, [currentPage]);
+  }, [currentPage, pageMetadata]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
