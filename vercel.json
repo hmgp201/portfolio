@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.harrysautomations.xyz"
+        }
+      ],
+      "destination": "https://harrysautomations.xyz/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/:path((?!api|_next|_static|_vercel|sitemap\\.xml|robots\\.txt|favicon\\.ico|images).*)",
