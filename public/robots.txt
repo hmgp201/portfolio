@@ -1,5 +1,5 @@
 # robots.txt for Harry's Automations
-# https://www.harrysautomations.xyz
+# https://harrysautomations.xyz
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Disallow: /*.json$
 Disallow: /manifest.json
 
 # Sitemap
-Sitemap: https://www.harrysautomations.xyz/sitemap.xml
+Sitemap: https://harrysautomations.xyz/sitemap.xml
 
 # Crawl-delay for good bots
 Crawl-delay: 0

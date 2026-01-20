@@ -517,7 +517,7 @@ export default function Portfolio() {
     metaDescription.content = metadata.description;
 
     // Update canonical URL
-    const canonicalUrl = `https://www.harrysautomations.xyz/${currentPage === 'home' ? '' : currentPage}`;
+    const canonicalUrl = `https://harrysautomations.xyz/${currentPage === 'home' ? '' : currentPage}`;
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -1369,7 +1369,7 @@ export default function Portfolio() {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.harrysautomations.xyz/"
+          "item": "https://harrysautomations.xyz/"
         }
       ]
     };
@@ -1379,7 +1379,7 @@ export default function Portfolio() {
         "@type": "ListItem",
         "position": 2,
         "name": pageNames[currentPage] || currentPage,
-        "item": `https://www.harrysautomations.xyz/${currentPage}`
+        "item": `https://harrysautomations.xyz/${currentPage}`
       });
     }
 
@@ -1406,10 +1406,10 @@ export default function Portfolio() {
           "jobTitle": "AI Integration & Automation Solutions Expert",
           "alternateName": "Harry's Automations",
           "description": "Strategic AI implementation, workflow automation, system integration, and technical documentation specialist with expertise in GPT-4, Claude AI, multi-agent systems, Zapier, n8n, and custom automation solutions",
-          "url": "https://www.harrysautomations.xyz",
+          "url": "https://harrysautomations.xyz",
           "email": "harrypethel@outlook.fr",
           "telephone": "+12407969774",
-          "image": "https://www.harrysautomations.xyz/images/profile.jpeg",
+          "image": "https://harrysautomations.xyz/images/profile.jpeg",
           "sameAs": [
             "https://www.linkedin.com/in/harry-pethel-566775231/"
           ],
@@ -1480,7 +1480,7 @@ export default function Portfolio() {
           },
           "workLocation": {
             "@type": "VirtualLocation",
-            "url": "https://www.harrysautomations.xyz"
+            "url": "https://harrysautomations.xyz"
           },
           "worksFor": {
             "@type": "Organization",
