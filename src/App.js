@@ -1409,7 +1409,7 @@ export default function Portfolio() {
           "url": "https://www.harrysautomations.xyz",
           "email": "harrypethel@outlook.fr",
           "telephone": "+12407969774",
-          "image": "https://i.imgur.com/93wvjeF.jpeg",
+          "image": "https://www.harrysautomations.xyz/images/profile.jpeg",
           "sameAs": [
             "https://www.linkedin.com/in/harry-pethel-566775231/"
           ],
