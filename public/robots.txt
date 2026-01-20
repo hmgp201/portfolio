@@ -1,7 +1,31 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for Harry's Automations
+# https://www.harrysautomations.xyz
+
 User-agent: *
 Allow: /
-Disallow: /api/
+Disallow: /static/
+Disallow: /*.json$
+Disallow: /manifest.json
 
-# Sitemap location
+# Sitemap
 Sitemap: https://www.harrysautomations.xyz/sitemap.xml
+
+# Crawl-delay for good bots
+Crawl-delay: 0
+
+# Specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
