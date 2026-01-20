@@ -2,6 +2,39 @@ import React, { useState, useEffect } from 'react';
 import { Code, Zap, Database, Mail, Linkedin, ChevronDown, CheckCircle, ArrowRight, Menu, X } from 'lucide-react';
 import './App.css';
 
+const pageMetadata = {
+  home: {
+    title: "Harry's Automations | Workflow Automation & System Integration Expert",
+    description: "Experienced automation specialist offering workflow automation, API integration, and technical documentation services. Save time and money with custom automation solutions.",
+    h1: "Automation Solutions That Transform Operations"
+  },
+  services: {
+    title: "Automation Services | Workflow Integration & Technical Documentation",
+    description: "Custom workflow automation, system integration, and technical documentation services. Zapier, n8n, API integrations, and more.",
+    h1: "Services"
+  },
+  ai: {
+    title: "AI Solutions | Strategic AI Implementation & Custom Development",
+    description: "Expert AI integration and development. Custom chatbots, multi-agent systems, LLM integration, and strategic AI consulting. GPT-4, Claude, LangChain, and more.",
+    h1: "AI Solutions"
+  },
+  skills: {
+    title: "Skills & Technologies | Automation Platforms & Integration Tools",
+    description: "Expert in Zapier, n8n, Stripe, PayPal, Salesforce, PostgreSQL, and more. Full stack of automation and integration technologies.",
+    h1: "Skills & Tools"
+  },
+  experience: {
+    title: "Experience | Automation Projects & Professional Background",
+    description: "Trilingual operations expert with proven track record at Propexo, Ledgible.io, and Coinbase. Built AI chatbots, automated billing systems, and more.",
+    h1: "Experience"
+  },
+  contact: {
+    title: "Contact | Get In Touch for Automation Solutions",
+    description: "Ready to automate your workflow? Contact Harry Pethel for custom automation, integration, and documentation services.",
+    h1: "Get In Touch"
+  }
+};
+
 export default function Portfolio() {
   const [currentPage, setCurrentPage] = useState('home');
   const [expandedCards, setExpandedCards] = useState({});
@@ -459,39 +492,6 @@ export default function Portfolio() {
 
   const t = translations[language];
 
-  const pageMetadata = {
-    home: {
-      title: "Harry's Automations | Workflow Automation & System Integration Expert",
-      description: "Experienced automation specialist offering workflow automation, API integration, and technical documentation services. Save time and money with custom automation solutions.",
-      h1: "Automation Solutions That Transform Operations"
-    },
-    services: {
-      title: "Automation Services | Workflow Integration & Technical Documentation",
-      description: "Custom workflow automation, system integration, and technical documentation services. Zapier, n8n, API integrations, and more.",
-      h1: "Services"
-    },
-    ai: {
-      title: "AI Solutions | Strategic AI Implementation & Custom Development",
-      description: "Expert AI integration and development. Custom chatbots, multi-agent systems, LLM integration, and strategic AI consulting. GPT-4, Claude, LangChain, and more.",
-      h1: "AI Solutions"
-    },
-    skills: {
-      title: "Skills & Technologies | Automation Platforms & Integration Tools",
-      description: "Expert in Zapier, n8n, Stripe, PayPal, Salesforce, PostgreSQL, and more. Full stack of automation and integration technologies.",
-      h1: "Skills & Tools"
-    },
-    experience: {
-      title: "Experience | Automation Projects & Professional Background",
-      description: "Trilingual operations expert with proven track record at Propexo, Ledgible.io, and Coinbase. Built AI chatbots, automated billing systems, and more.",
-      h1: "Experience"
-    },
-    contact: {
-      title: "Contact | Get In Touch for Automation Solutions",
-      description: "Ready to automate your workflow? Contact Harry Pethel for custom automation, integration, and documentation services.",
-      h1: "Get In Touch"
-    }
-  };
-
   useEffect(() => {
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap';
@@ -558,7 +558,7 @@ export default function Portfolio() {
       }
       tag.content = content;
     });
-  }, [currentPage, pageMetadata]);
+  }, [currentPage]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
